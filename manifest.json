@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "UBlock (and Other) Auto Tab Closer (Unofficial)",
+  "version": "1.0",
+  "description": "Automatically closes tabs that match specific URLs and allows users to add more URLs via settings.",
+  "permissions": ["tabs", "storage"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "ublock-auto-tab-closer@example.com",
+      "strict_min_version": "91.0"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}
